@@ -1,0 +1,44 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+2026-03-11 00:33:09.437  INFO 46652 --- [           main] com.example.blog.BlogApplication         : Starting BlogApplication v1.0-SNAPSHOT using Java 21.0.10 on XieJC with PID 46652 (C:\Users\x1526\Desktop\blog_demo\blog-backend\target\blog-backend-1.0-SNAPSHOT.jar started by x1526 in c:\Users\x1526\Desktop\blog_demo\blog-backend)
+2026-03-11 00:33:09.438  INFO 46652 --- [           main] com.example.blog.BlogApplication         : The following 1 profile is active: "dev"
+2026-03-11 00:33:10.926  INFO 46652 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-03-11 00:33:10.938  INFO 46652 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11 00:33:10.938  INFO 46652 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-03-11 00:33:11.032  INFO 46652 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-11 00:33:11.032  INFO 46652 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1531 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Initialization Sequence datacenterId:0 workerId:1
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.5 
+Can not find table primary key in Class: "com.example.blog.entity.ArticleTag".
+2026-03-11 00:33:11.947  WARN 46652 --- [           main] c.b.m.core.injector.DefaultSqlInjector   : class com.example.blog.entity.ArticleTag ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-03-11 00:33:12.397  INFO 46652 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33a053d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14a54ef6, org.springframework.security.web.context.SecurityContextPersistenceFilter@10ad20cb, org.springframework.security.web.header.HeaderWriterFilter@47a64f7d, org.springframework.web.filter.CorsFilter@20921b9b, org.springframework.security.web.authentication.logout.LogoutFilter@13c612bd, com.example.blog.common.filter.JwtAuthenticationFilter@5118388b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c282004, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e792ce3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@867ba60, org.springframework.security.web.session.SessionManagementFilter@106faf11, org.springframework.security.web.access.ExceptionTranslationFilter@3a45c42a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a53bb6f]
+2026-03-11 00:33:12.872  WARN 46652 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2026-03-11 00:33:12.897  INFO 46652 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-11 00:33:12.928  INFO 46652 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-03-11 00:33:12.969 ERROR 46652 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

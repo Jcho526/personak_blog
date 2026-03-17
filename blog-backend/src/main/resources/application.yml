@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: blog-backend
+
+server:
+  port: 8080
+
+upload:
+  path: uploads
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.blog.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+jwt:
+  secret: your-secret-key-change-in-production
+  expiration: 86400000
+  refresh-expiration: 604800000
